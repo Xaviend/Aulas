@@ -85,6 +85,13 @@ int main(void) {
                 printf("Total de pontos: %.1f\n", pontos);
             } else {
                 printf("Que pena, %s! Você perdeu. O número secreto era %d.\n", nome, numerosecreto);
+                // Imprime a caveira em formato ASCII
+            printf("       _____ \n");
+            printf("      /     \\ \n");
+            printf("     | () () |\n");
+            printf("      \\  ^  / \n");
+            printf("       ||||| \n");
+            printf("       ||||| \n");
                 printf("Total de pontos: %.1f\n", pontos);
             }
 

@@ -1,25 +1,2 @@
-  {
-        "version": "2.0.0",
-        "tasks": [
-            {
-                "label": "Compilar C/C++",
-                "type": "shell",
-                "command": "gcc",
-                "args": [
-                    "-g",
-                    "${file}",
-                    "-o",
-                    "${fileDirname}/${fileBasenameNoExtension}.exe"
-                ],
-                "group": {
-                    "kind": "build",
-                    "isDefault": true
-                },
-                "problemMatcher": ["$gcc"],
-                "detail": "Compilar usando GCC"
-            }
-        ]
-    }
-    
+"terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe"
 
-    
