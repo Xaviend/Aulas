@@ -1,2 +1,3 @@
 Nome: Teste 1, Pontuação: 315.8
 Nome: 55, Pontuação: 450.0
+Nome: Iury , Pontuação: 136.4
