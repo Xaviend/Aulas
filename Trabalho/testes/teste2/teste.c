@@ -148,4 +148,6 @@ int main(void) {
     printf("Saindo do jogo. Até a próxima!\n");
 
     return 0;
+    //Iury Xavier Bomfim 2412130039
+    // Bernardo Felipe Silva Sousa 2412130075
 }
