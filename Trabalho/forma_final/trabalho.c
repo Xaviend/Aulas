@@ -41,7 +41,14 @@ int main(void)  {
 
         scanf("%d", &chute);
         printf("Seu chute foi %d\n", chute);
-
+       
+       
+        if (scanf("%d", &chute) != 1 || chute < 1 || chute > 100) {
+            printf("Chute inválido! Por favor, insira um número entre 1 e 100.\n");
+            while (getchar() != '\n'); // Limpa o buffer de entrada
+            continue;  // Volta a pedir o chute
+       }
+       
         if(chute < 0) {
             printf("Você não pode chutar números negativos!\n");
             continue;
@@ -59,8 +66,25 @@ int main(void)  {
         else {
             printf("Seu chute foi menor que o número secreto\n");
         }
+    // Cálculo da pontuação baseado na proximidade
+               
+        double diferenca = fabs(chute - numerosecreto);  // Diferença entre chute e número secreto
+        
+        double pontosperdidos = (diferenca / 100) * PONTOS_INICIAIS; // Penalização linear
+        
+        pontos -= pontosperdidos;
 
-        tentativas++;
+    // Garantir que os pontos não sejam negativos
+        if (pontos < 0) {
+            pontos = 0;
+            }
+
+    // Mostrar a pontuação restante após cada tentativa
+                
+        printf("Pontuação restante: %.1f\n", pontos);
+        
+            
+                tentativas++;
 
         double pontosperdidos = abs(chute - numerosecreto) / (double)2;
         pontos = pontos - pontosperdidos;

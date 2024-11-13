@@ -10,6 +10,12 @@
 #define PONTOS_INICIAIS 1000
 
 int main(void) {
+    // Definição da estrutura dentro da função main
+    typedef struct {
+        char nome[TAMANHO_MAXIMO_NOME];
+        double pontos;
+    } Jogador;
+
     int opcao;
 
     do {
@@ -22,14 +28,15 @@ int main(void) {
         printf("2. Exibir Ranking\n");
         printf("3. Sair\n");
         printf("Opção: ");
-        scanf("%d", &opcao);
-        getchar(); // Para capturar o caractere de nova linha
-
-
-        if(scanf("%d", &opcao) != 1) {
+        
+        // Verifica se a opção inserida é um número válido
+        if (scanf("%d", &opcao) != 1) {
             printf("Opção inválida! Tente novamente.\n");
-            while(getchar() != '\n'); // Limpa o buffer
+            while (getchar() != '\n'); // Limpa o buffer de entrada
+            continue;  // Volta ao início do loop
         }
+        
+        getchar(); // Para capturar o caractere de nova linha após o número
 
         if (opcao == 1) {
             // Variável para armazenar o nome do jogador
