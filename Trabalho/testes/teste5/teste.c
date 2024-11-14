@@ -120,7 +120,7 @@ int main(void) {
             // Exibir o resultado do jogo
             if (acertou) {
                 printf("Parabéns, %s! Você ganhou!\n", nome);
-                printf("Você acertou em %d tentativas!\n", tentativas);
+                printf("Você acertou faltando %d tentativas!\n", tentativas);
                 printf("Total de pontos: %.1f\n", pontos);
             } else {
                 printf("Que pena, %s! Você perdeu. O número secreto era %d.\n", nome, numerosecreto);
