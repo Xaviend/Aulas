@@ -1,8 +1,9 @@
-#include <stdio.h>
-#include <time.h>
-#include <stdlib.h>
+#include <stdio. h>
+#include <time.h >
+#include <stdlib.h> 
 #include <string.h>
-#include <math.h>
+#include <math.h>stris
+ 
 
 #define TAMANHO_MAXIMO_NOME 50
 #define TAMANHO_MAXIMO_LINHA 100
